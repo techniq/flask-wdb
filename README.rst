@@ -5,7 +5,7 @@ Integrate Wdb instead of Werkzeug debugger for Flask applications
 
 Usage
 -----
-
+::
     from flask import Flask
     from flask_wdb import Wdb
 
