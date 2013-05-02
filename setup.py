@@ -1,15 +1,18 @@
 """
 Flask-Wdb
--------------
+---------
 
 Integrate Wdb instead of Werkzeug debugger for Flask applications
+
+`See: <http://github.com/techniq/flask-wdb>`_
 """
 from setuptools import setup
 
+VERSION = '0.0.1'
 
 setup(
     name='Flask-Wdb',
-    version='0.0.1',
+    version=VERSION,
     url='https://github.com/techniq/flask-wdb/',
     license='BSD',
     author='Sean Lynch',
@@ -25,12 +28,11 @@ setup(
         'wdb'
     ],
     classifiers=[
-        'Environment :: Web Environment',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
-        'Topic :: Software Development :: Libraries :: Python Modules'
+        'Programming Language :: Python :: 2',
+        'Topic :: Software Development :: Debuggers'
     ]
 )
