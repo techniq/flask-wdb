@@ -3,8 +3,6 @@ Flask-Wdb
 ---------
 
 Integrate Wdb instead of Werkzeug debugger for Flask applications
-
-`See: <http://github.com/techniq/flask-wdb>`_
 """
 from setuptools import setup
 
