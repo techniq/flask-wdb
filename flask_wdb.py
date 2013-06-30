@@ -1,5 +1,5 @@
 from flask import Flask
-from wdb import Wdb as _Wdb
+from wdb.ext import WdbMiddleware
 
 
 class Wdb(object):
@@ -15,7 +15,7 @@ class Wdb(object):
             start_disabled = app.config.get('WDB_START_DISABLED', False)
             theme = app.config.get('WDB_THEME', 'dark')
 
-            app.wsgi_app = _Wdb(app.wsgi_app, start_disabled, theme)
+            app.wsgi_app = WdbMiddleware(app.wsgi_app, start_disabled, theme)
 
             # Patch app.run to disable Werkzeug debugger
             app.run = self._run
